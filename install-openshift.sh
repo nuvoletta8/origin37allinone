@@ -1,10 +1,13 @@
 #!/bin/bash
 
-## see: https://www.youtube.com/watch?v=-OOnGK-XeVY
+## video di aiuto  https://www.youtube.com/watch?v=-OOnGK-XeVY
 
-#export DOMAIN=${DOMAIN:="$(curl ipinfo.io/ip).nip.io"}
 export HOSTNAME=${HOSTNAME:="$(hostname)"}
 export USERNAME=${USERNAME:="$(whoami)"}
+###### se si vuole user Admin decommentare la riga sotto e commentare quella sopra  
+#export USERNAME=${USERNAME:=Admin}
+export PASSWORD=${PASSWORD:=password}
+##########################################modificare user e password secondo esigenze
 export VERSION=${VERSION:="v3.7.1"}
 
 export SCRIPT_REPO=${SCRIPT_REPO:="https://raw.githubusercontent.com/nuvoletta8/origin37allinone/master"}
