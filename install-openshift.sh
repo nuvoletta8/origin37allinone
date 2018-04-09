@@ -7,7 +7,7 @@ export HOSTNAME=${HOSTNAME:="$(hostname)"}
 export USERNAME=${USERNAME:="$(whoami)"}
 export VERSION=${VERSION:="v3.7.1"}
 
-export SCRIPT_REPO=${SCRIPT_REPO:="https://github.com/nuvoletta8/origin37allinone/blob/master"}
+export SCRIPT_REPO=${SCRIPT_REPO:="https://raw.githubusercontent.com/nuvoletta8/origin37allinone/master"}
 
 export IP="$(ip route get 8.8.8.8 | awk '{print $NF; exit}')"
 export API_PORT=${API_PORT:="8443"}
